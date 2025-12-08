@@ -24,7 +24,7 @@ export const theme = {
   },
 
   effects: {
-    tileShadow: "0px 4px 12px 0px #BAC7D580",
+    tileShadow: "0px 4px 12px 0px #BAC7D580", 
     posterGradient: gradient,
   },
 };

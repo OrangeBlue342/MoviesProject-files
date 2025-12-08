@@ -1,14 +1,13 @@
 import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './GlobalStyle';
 import theme from './theme';
-import Error from './Error';
-import Loading from './Loading'
-import { NoResults } from './NoResults';
 import MoviePage from './MoviePage';
 
 export const App = () => (
   <ThemeProvider theme={theme}>
+    <GlobalStyle />
     <div className="App">
-      <NoResults />
+      <MoviePage />
     </div>
   </ThemeProvider>
 );

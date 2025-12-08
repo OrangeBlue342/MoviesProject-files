@@ -1,18 +1,22 @@
 import { Wrapper, 
          Container, 
          MovieDetails, 
-         Description, 
-         MoviePoster,
-         MovieTitle,
-         MovieYear,
-         MovieProduction,
-         MovieDate,
-         MovieGenre,
-         MovieRating,
+         MovieTile, 
+         Poster,
+         Description,
+         Title,
+         Year,
+         Tags,
+         Tag,
+         RatingContent,
+         Rating,
          Story,
          Header, 
          Tile,
          NoMovieIcon,
+         DataTile,
+         Data,
+         Star,
           } from "./styled";
 
 export const MoviePage = () => {
@@ -20,23 +24,37 @@ export const MoviePage = () => {
         <Wrapper>
             <Container />
             <MovieDetails>
-                <Description>
-                <MoviePoster>
+                <MovieTile>
+                <Poster>
                     <NoMovieIcon />
-                </MoviePoster>
-                <MovieTitle />
-                <MovieYear />
-                <MovieProduction>Production: "."</MovieProduction>
-                <MovieDate>Release: "."</MovieDate>
-                <MovieGenre>tu będą pobierane tagi</MovieGenre>
-                <MovieRating>Rating: "."</MovieRating>
-                <Story>Bla, bla bla. Bla, bla. Bla, bla.</Story>
+                </Poster>
+                <Description>
+                   <Title>Tytuł</Title>
+                   <Year>Tu będzie funkcja GetYearFromDate</Year>
+                <DataTile>
+                    Production:<Data>"."</Data>
+                    Release:<Data>"."</Data>
+                </DataTile>
+                <Tags>
+                    <Tag>Tag1</Tag>
+                    <Tag>Tag2</Tag>
+                </Tags>
+                   <RatingContent>
+                    <Rating>
+                    <Star />7,8
+                    </Rating>
+                    /10 335 votes
+                    </RatingContent>
+                   <Story>Bla, bla bla. Bla, bla. Bla, bla.</Story>
                 </Description>
-                <Header>Cast</Header>
-                <Tile></Tile>
-                <Header>Crew</Header>
-                <Tile></Tile>
+                </MovieTile>
+        <Header>Cast</Header>
+            <Tile></Tile>
+        <Header>Crew</Header>
+            <Tile></Tile>
             </MovieDetails>
         </Wrapper>
     );
 };
+
+export default MoviePage;
