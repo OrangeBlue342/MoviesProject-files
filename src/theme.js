@@ -11,6 +11,7 @@ export const theme = {
     whisper: "#F5F5FA",
     mystic: "#E4E6F0",
     waterloo: "#7E839A",
+    Darkergrey: "#5A5F7D",
     black: "#000000",
     candlelight: "#FCD420",
     pattensBlue: "#D6E4FF",
