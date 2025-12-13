@@ -32,6 +32,8 @@ import { Wrapper,
          PersonTile,
          Star40px,
          MobileOnly,
+         MovieData,
+         DataMobileOnly,
           } from "./styled";
 
 export const MoviePage = () => {
@@ -58,27 +60,32 @@ export const MoviePage = () => {
                 <Description>
                     <MobileOnly>
                    <Title>Tytuł</Title>
-                   <Year>Tu będzie funkcja GetYearFromDate</Year>
+                   <Year>GetYearFromDate</Year>
                 <DataTile>
-                    Production:<Data>"."</Data>
-                    Release:<Data>"."</Data>
+                  <MovieData>Production:</MovieData>
+                    <Data>"."</Data>
+                  <MovieData>Release:</MovieData>
+                    <Data>"."</Data>
                 </DataTile>
                 <Tags>
                     <Tag>Tag1</Tag>
-                    <Tag>Tag2</Tag>
+                    <Tag>Action</Tag>
+                    <Tag>Adventure</Tag>
                 </Tags>
                    <RatingContent>
                     <Rating>
                     <Star />7,8
                     </Rating>
+                    <DataMobileOnly>
                     /10 
+                    </DataMobileOnly>
                     <Votes>
                     335 votes
                     </Votes>
                     </RatingContent>
                     </MobileOnly>
+                     </Description>
                    <Story>Bla, bla bla. Bla, bla. Bla, bla.</Story>
-                </Description>
                 </MovieTile>
                 <PeopleSection>
                       <Header>Cast</Header>
