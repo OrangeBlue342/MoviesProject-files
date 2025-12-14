@@ -5,7 +5,7 @@ import {
   selectMovieList,
   selectStatus,
   selectPage,
-} from "../movieSlice";
+} from "./movieSlice";
 import { StyledHeader, Container, Wrapper, SpinnerWrapper } from "./styled";
 import { MovieListCard } from "./MovieListCard";
 import { StyledSpinner } from "../../../common/Navigation/SearchBar/Content/Loading/styled";
