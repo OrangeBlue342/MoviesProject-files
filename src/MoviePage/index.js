@@ -54,24 +54,30 @@ export const MoviePage = () => {
             </Container >
             <MovieDetails>
                 <MovieTile>
+                
                 <Poster>
                     <NoMovieIcon />
                 </Poster>
+                
                 <Description>
+                    
                     <MobileOnly>
                    <Title>Tytuł</Title>
                    <Year>GetYearFromDate</Year>
+               
                 <DataTile>
                   <MovieData>Production:</MovieData>
                     <Data>"."</Data>
-                  <MovieData>Release:</MovieData>
+                  <MovieData>Release date:</MovieData>
                     <Data>"."</Data>
                 </DataTile>
+                
                 <Tags>
                     <Tag>Tag1</Tag>
                     <Tag>Action</Tag>
                     <Tag>Adventure</Tag>
                 </Tags>
+                  
                    <RatingContent>
                     <Rating>
                     <Star />7,8
@@ -84,8 +90,13 @@ export const MoviePage = () => {
                     </Votes>
                     </RatingContent>
                     </MobileOnly>
-                     </Description>
-                   <Story>Bla, bla bla. Bla, bla. Bla, bla.</Story>
+                    </Description>
+                   <Story>
+                    A young Chinese maiden disguises herself as a male warrior in order to save her father. <br />
+                    Disguises herself as a male warrior in order to save her father.  
+                    A young Chinese maiden disguises herself as a male warrior in order to save her father.
+                   </Story>
+                  
                 </MovieTile>
                 <PeopleSection>
                       <Header>Cast</Header>
