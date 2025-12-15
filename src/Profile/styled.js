@@ -16,7 +16,8 @@ align-items: center;
 `;
 
 export const Container = styled.div`
-width: 1368px;
+max-width: 1368px;
+width: 100%;
 height: 644px;
 margin-left: 276px;
 margin-right: 276px;
@@ -120,25 +121,37 @@ grid-area: story;
 `;
 
 export const PersonSection = styled.section`
-
+width: 1368px;
+height: 717px;
+margin: 0 auto;
+margin-bottom: 64px;
 `;
 
 export const Header = styled.header`
-
+width: auto;
+height: 43px;
+margin-bottom: 24px;
+font-size: 36px;
+font-weight: 600;
+line-height: 120%;
+letter-spacing: 0px;
 `;
 
 export const TileSection = styled.div`
-
+display: grid;
+grid-template-columns: repeat(4, 324px);
+grid-gap: 24px;
+margin-bottom: 64px;
+justify-content: center;
 `;
 
 export const Tile = styled.div`
-width: 208px;
-height: 339px;
+width: 324px;
+height: 650px;
 border-radius: 5px;
 background-color: ${({ theme }) => theme.colors.white};
 box-shadow: 0px 4px 12px 0px rgba(186, 199, 213, 0.5);
 padding: 16px;
-margin-bottom: 8px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -152,10 +165,11 @@ align-items: center;
 `;
 
 export const TileImage = styled.div`
-width: 176px;
-height: 231px;
+width: 292px;
+height: 434px;
 border-radius: 5px;
 margin-bottom: 12px;
+background-color: ${({ theme }) => theme.colors.waterloo};
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: 120px;
@@ -166,26 +180,43 @@ margin-bottom: 12px;
 `;
 
 export const MovieTile = styled.div`
-
+width: 292px;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 `;
 
 export const Title = styled.header`
-
+width: auto;
+height: auto;
+font-size: 22px;
+font-weight: 500;
+line-height: 130%;
+letter-spacing: 0px;
+margin-bottom: 8px;
 `;
 
 export const Year = styled.div`
-
+width: auto;
+height: 24px;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0px;
+color: ${({ theme }) => theme.colors.Darkergrey};
 `;
 
 export const Tags = styled.ul`
 width: auto;
-height: 30px;
+height: 36px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-gap: 16px;
+gap: 8px;
 padding-inline-start: 0;
 list-style: none;
+margin-top: 16px;
 margin-bottom: 4px;
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
@@ -195,20 +226,18 @@ margin-bottom: 4px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 1px;
-    margin-bottom: 0px;
-}
+    }
 `;
 
 export const Tag = styled.li`
 width: auto;
-height: 30px;
+height: 36px;
 background-color: ${({ theme }) => theme.colors.mystic};
 padding: 8px 16px;
 border-radius: 5px;
 font-size: 14px;
 font-weight: 400;
-line-height: 100%;
+line-height: 140%;
 letter-spacing: 0px;
 color: ${({ theme }) => theme.colors.black};
 
@@ -222,22 +251,24 @@ color: ${({ theme }) => theme.colors.black};
 `;
 
 export const RatingContent = styled.div`
-width: auto;
-height: 29px;
-font-size: 14px;
+width: 292px;
+height: 24px;
+font-size: 16px;
 font-weight: 400;
-line-height: 120%;
+line-height: 150%;
 letter-spacing: 0px;
-color: ${({ theme }) => theme.colors.black};
-margin-bottom: 18px;
-margin-top: 8px;
+color: ${({ theme }) => theme.colors.Darkergrey};
+margin-top: auto;
+gap: 12px;
+
 display: flex;
 flex-direction: row;
-align-items: baseline;
+align-items: center;
+align-self: flex-end;
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;
-    height: 24px;
+    height: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 13px;
@@ -253,14 +284,13 @@ align-items: baseline;
 
 export const Rating = styled.div`
 width: auto;
-height: 29px;
-font-size: 22px;
-font-weight: 500;
-line-height: 130%;
+height: 24px;
+font-size: 16px;
+font-weight: 600;
+line-height: 150%;
 letter-spacing: 0px;
-vertical-align: middle;
+
 color: ${({ theme }) => theme.colors.black};
-margin-right: 8px;
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;
@@ -276,14 +306,7 @@ margin-right: 8px;
 `;
 
 export const Votes = styled.p`
-width: auto;
-height: 17px;
-font-size: 14px;
-font-weight: 400;
-line-height: 120%;
-letter-spacing: 0px;
-color: ${({ theme }) => theme.colors.black};
-margin-left: 8px;
+
 `;
 
 export const Star = styled(StarIcon)`
