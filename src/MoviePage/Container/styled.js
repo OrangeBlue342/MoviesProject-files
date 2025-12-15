@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as StarIcon40px } from "../shape-star.svg";
+import { ReactComponent as StarIcon40px } from "../../images/shape-star.svg";
 
 export const Container = styled.div`
 width: 100%;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as PersonIcon } from "../Person.svg";
+import { ReactComponent as PersonIcon } from "../../images/Person.svg";
 
 export const PeopleSection = styled.section`
 max-width: 1368px;
