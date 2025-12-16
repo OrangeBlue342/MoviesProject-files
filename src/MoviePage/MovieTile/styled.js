@@ -24,7 +24,7 @@ box-shadow: 0px 4px 12px #BAC7D580;
     height: 400px;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: /*1fr*/ auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "poster mobile"
     "story story";
