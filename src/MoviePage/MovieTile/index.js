@@ -39,8 +39,7 @@ export const MovieTileSection = () => (
                 
         <Tags>
             <Tag>Tag1</Tag>
-            <Tag>Action</Tag>
-            <Tag>Adventure</Tag>
+           
         </Tags>
                   
         <RatingContent>

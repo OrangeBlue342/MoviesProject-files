@@ -20,39 +20,7 @@ export const Cast = () => (
                                     <TileName>Liu Yifei</TileName>
                                     <TileRole>Mulan</TileRole>
                                 </PersonTile>
-                              </Tile> 
-                              <Tile>
-                                <TileImage><Person /></TileImage>
-                                <PersonTile>
-                                <TileName>Liu Yifei</TileName>
-                                <TileRole>Comandor Shang</TileRole>
-                                </PersonTile>
-                              </Tile> 
-                              <Tile>
-                                <TileImage><Person /></TileImage>
-                                <TileName></TileName>
-                                <TileRole></TileRole>
-                              </Tile>
-                              <Tile>
-                                <TileImage><Person /></TileImage>
-                                <TileName></TileName>
-                                <TileRole></TileRole>
-                              </Tile> 
-                              <Tile>
-                                <TileImage><Person /></TileImage>
-                                <TileName></TileName>
-                                <TileRole></TileRole>
-                              </Tile> 
-                              <Tile>
-                                <TileImage><Person /></TileImage>
-                                <TileName></TileName>
-                                <TileRole></TileRole>
-                              </Tile> 
-                              <Tile>
-                                <TileImage><Person /></TileImage>
-                                <TileName></TileName>
-                                <TileRole></TileRole>
-                              </Tile>
+                              </Tile>                           
                             </TileSection>
                       <Header>Crew</Header>
                             <TileSection>

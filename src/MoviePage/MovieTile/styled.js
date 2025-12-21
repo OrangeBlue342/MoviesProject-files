@@ -19,6 +19,21 @@ grid-column-gap: 40px;
 grid-row-gap: 16px;
 box-shadow: 0px 4px 12px #BAC7D580;
 
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    max-width: 768px;
+    height: auto;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "poster mobile"
+    "story story";
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+    margin-bottom: 48px;
+};
+
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     max-width: 288px;
     height: 400px;
@@ -53,6 +68,12 @@ grid-area: poster;
 
 /* background-image: url('/path/to/movie/poster.jpg') - na później;*/
 
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    width: 200px;
+    height: 100%;
+    grid-area: poster;
+};
+
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
 width: 114px;
 height: 169px;
@@ -70,6 +91,13 @@ align-items: flex-start;
 flex-wrap: wrap;
 grid-area: mobile;
 
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-area: mobile;
+};
+
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;
     height: 176px;
@@ -84,6 +112,11 @@ font-weight: 600;
 line-height: 120%;
 letter-spacing: 0px;
 margin-bottom: 24px;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+};
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 16px;
@@ -100,6 +133,14 @@ font-weight: 400;
 line-height: 120%;
 letter-spacing: 0px;
 word-break: break-word;
+color: ${({ theme }) => theme.colors.Darkergrey};
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    word-break: break-word;
+};
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     font-size: 13px;
@@ -294,6 +335,16 @@ line-height: 160%;
 letter-spacing: 0px;
 color: ${({ theme }) => theme.colors.black};
 grid-area: story;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    font-size: 18px;
+    line-height: 150%;
+    width: auto;
+    max-width: 700px;
+    height: auto;
+    display: grid;
+    grid-area: story;
+}
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;

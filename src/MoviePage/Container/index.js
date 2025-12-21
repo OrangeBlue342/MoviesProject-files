@@ -4,7 +4,9 @@ import { Container,
          TitleRating,
          TitleRatingContent,
          Layout,
-         Star40px,} from "./styled";
+         Star40px,
+         Votes
+        } from "./styled";
 
 export const MovieSection = () => (
 <Container>
@@ -16,7 +18,9 @@ export const MovieSection = () => (
                     <Star40px />7,8
                     </TitleRating>
                              /10</Layout>
+                    <Votes>
                     335 votes
+                    </Votes>
                     </TitleRatingContent>
                 </TitleContainer>
             </Container >
