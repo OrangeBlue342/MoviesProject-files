@@ -8,14 +8,21 @@ margin: 0;
 `;
 
 export const PersonSection = styled.section`
-width: 1368px;
-height: 717px;
+max-width: 1368px;
+height: auto;
 margin: 0 auto;
 margin-bottom: 64px;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) { 
+    max-width: 1136px;
+    height: auto;
+    margin-bottom: 48px;
+}
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: 292px;
     height: auto;
+    margin-bottom: 32px;
 }
 `;
 
@@ -33,6 +40,7 @@ letter-spacing: 0px;
     height: 24px;
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 `;
 
@@ -42,6 +50,18 @@ grid-template-columns: repeat(4, 324px);
 grid-gap: 24px;
 margin-bottom: 64px;
 justify-content: center;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) { 
+    grid-template-columns: repeat(3, 324px);
+    grid-gap: 16px;
+    margin-bottom: 48px;
+};
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) { 
+    grid-template-columns: repeat(2, 324px);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+};
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     grid-template-columns: 288px;
@@ -53,7 +73,7 @@ justify-content: center;
 export const Tile = styled.div`
   max-width: 324px;
   width: auto;
-  height: 650px;
+  height: auto;
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 4px 12px rgba(186, 199, 213, 0.5);
@@ -61,6 +81,16 @@ export const Tile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) { 
+    max-width: 324px;
+    height: auto;
+};
+
+@media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
+    max-width: 324px;
+    height: auto;
+};
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: grid;
@@ -137,7 +167,7 @@ color: ${({ theme }) => theme.colors.Darkergrey};
 
 export const Tags = styled.ul`
 width: auto;
-height: 36px;
+height: auto;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
@@ -145,7 +175,7 @@ gap: 8px;
 padding-inline-start: 0;
 list-style: none;
 margin-top: 16px;
-margin-bottom: 4px;
+margin-bottom: 8px;
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;

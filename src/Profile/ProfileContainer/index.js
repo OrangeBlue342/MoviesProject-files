@@ -19,9 +19,11 @@ export const ProfileContainer = () => (
         <DataTile>
                     <ActorData></ActorData>
                         <Data>"."</Data>
+        </DataTile>
+        <DataTile>
                     <ActorData2></ActorData2>
                         <Data>"."</Data>
-                </DataTile>
+        </DataTile>       
     </Description>
         <Story>
             Liu Yifei was born in Wuhan, Hubei, Province of China on August 25th, 1987. 

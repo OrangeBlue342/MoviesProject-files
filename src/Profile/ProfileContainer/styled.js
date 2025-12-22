@@ -4,7 +4,7 @@ import { ReactComponent as PersonIcon } from "../../images/Person.svg";
 export const Container = styled.div`
 max-width: 1368px;
 width: 100%;
-height: 644px;
+height: auto;
 margin-left: 276px;
 margin-right: 276px;
 margin-top: 56px;
@@ -21,10 +21,24 @@ grid-template-areas:
     "image story";
 grid-column-gap: 40px;
 
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) { 
+    max-width: 768px;
+    width: 100%;
+    height: auto;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 32px;
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+}
+
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     max-width: 290px;
     width: 100%;
-    height: 356px;
+    height: auto;
     margin-top: 23px;
     margin-left: 16px;
     margin-right: 16px;
@@ -57,7 +71,7 @@ grid-area: image;
 
 export const Description = styled.article`
 max-width: 849px;
-height: 145px;
+height: auto;
 padding-top: 8px;
 padding-bottom: 8px;
 display: flex;
@@ -66,12 +80,21 @@ align-items: flex-start;
 gap: 24px;
 grid-area: description;
 
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) { 
+    width: auto;
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    gap: 8px;
+    grid-area: description;
+};
+
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;
-    height: 96px;
+    height: auto;
     padding-top: 4px;
     padding-bottom: 4px;
-    gap: 16px;
+    gap: 4px;
     grid-area: description;
 }
 `;
@@ -83,10 +106,17 @@ font-size: 36px;
 font-weight: 600;
 line-height: 120%;
 letter-spacing: 0px;
+margin-bottom: 24px;
+
+@media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+};
 
 @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) { 
     width: auto;
-    height: 18px;
+    height: auto;
+    margin-bottom: 8px;
     font-size: 14px;
     font-weight: 500;
     line-height: 130%;
@@ -95,10 +125,10 @@ letter-spacing: 0px;
 
 export const DataTile = styled.ul`
 width: auto;
-height: 52px;
+height: auto;
 padding: 0;
 display: grid;
-grid-template-columns: 122px 1fr;
+grid-template-columns: max-content 1fr;
 column-gap: 8px;
 row-gap: 8px;
 margin-top: 0px;
@@ -110,7 +140,8 @@ color: ${({ theme }) => theme.colors.waterloo};
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto;
     column-gap: 4px;
     row-gap: 4px;
 
@@ -123,6 +154,8 @@ font-size: 18px;
 font-weight: 400;
 line-height: 120%
 letter-spacing 0px;
+justify-self: start;
+white-space: nowrap;
 color: ${({ theme }) => theme.colors.waterloo};
 
  &::before {
@@ -173,13 +206,12 @@ color: ${({ theme }) => theme.colors.black};
     height: 16px;
     font-size: 12px;
     line-height: 130%;
-    grid-column: 1 / -1;
 }
 `;
 
 export const Story = styled.div`
 width: auto;
-height: 96px;
+height: auto;
 word-break: break-word;
 grid-area: story;
 font-size: 20px;

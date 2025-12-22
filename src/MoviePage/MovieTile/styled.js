@@ -158,7 +158,7 @@ width: auto;
 height: 52px;
 padding: 0;
 display: grid;
-grid-template-columns: 122px 102px;
+grid-template-columns: max-content 1fr;
 column-gap: 8px;
 margin-top: 8px;
 margin-bottom: 4px;
